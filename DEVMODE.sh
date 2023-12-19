@@ -21,7 +21,7 @@ echo "Contributor - 5less-chromosones"
 echo "May Ultrablue Rest In Peace o7"
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
-echo '{"URLBlocklist": [], "SystemFeaturesDisableList": [], "EditBookmarksEnabled": true, "ChromeOsMultiProfileUserBehavior": "unrestricted", "DeveloperToolsAvailability": 1, "DefaultPopupsSetting": 1, "AllowDeletingBrowserHistory": true, "AllowDinosaurEasterEgg": true, "IncognitoModeAvailability": 0, "AllowScreenLock": true, "ExtensionAllowedTypes": null, "ExtensionInstallAllowlist": null, "ExtensionInstallBlocklist": null, "ExtensionSettings": {}, "HomepageLocation": "chrome://newtab", "NewTabPageLocation": "", "ManagedBookmarks": { "level": "mandatory", "scope": "user", "source": "cloud", "value": [] }, "PinnedLauncherApps": { "level": "mandatory", "scope": "user", "source": "cloud", "value": [] }, "RestoreOnStartupURLs": { "level": "mandatory", "scope": "user", "source": "cloud", "value": [] }, "WebAppInstallForceList": { "level": "mandatory", "scope": "user", "source": "cloud", "value": [] } }' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
+echo '{"DeveloperToolsAvailability": 1, "AllowDinosaurEasterEgg": true }' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
 cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
 mount --bind /tmp/overlay/etc /etc
 
