@@ -21,7 +21,7 @@ echo "Contributor - 5less-chromosones"
 echo "May Ultrablue Rest In Peace o7"
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
-echo '{"DeveloperToolsAvailability": 1, "AllowDinosaurEasterEgg": true, "IncognitoModeAvailability": 0 }' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
+echo '{"DeveloperToolsAvailability": 2, "AllowDinosaurEasterEgg": false }' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
 cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
 mount --bind /tmp/overlay/etc /etc
 
